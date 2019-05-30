@@ -61,3 +61,6 @@ http://localhost:8080/employees/1
 ```
 http://localhost:8080/employees/search?name=John
 ```
+```
+http://localhost:8080/employees/search?name=John&grade=1
+```
