@@ -1,4 +1,4 @@
-# Employee Management Application
+# management-app (Employee Management Application)
 
 Web API of a simple user management application used to add, delete, modify and search for employees.
 Service reply is returned in the JSON format
@@ -60,4 +60,7 @@ http://localhost:8080/employees/1
 * to search by any combination of parameters
 ```
 http://localhost:8080/employees/search?name=John
+```
+```
+http://localhost:8080/employees/search?name=John&grade=1
 ```
