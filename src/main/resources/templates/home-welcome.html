@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee management Web API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Employee management Web API</h1>
+    <p>Provides CRUD operations to manage employees</p>
+    <p>The Web API service enables HTTP clients to add, delete, update and search employees.</p>
+</div>
+<div class="container">
+    <div>
+        <h3>Description of API:</h3>
+        <ul>
+            <li>Add employee</li>
+            <li>Delete employee</li>
+            <li>Update employee</li>
+            <li>Search employee</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Employee</h3>
+        Combination of name and surname is unique, grade is in the range from 1 to 10 and salary is a positive integer or zero.
+        Id is auto-generated when a new employee is added.<br>
+        Search is not case-sensitive.
+    </div>
+    <div>
+        <h3>Examples</h3>
+        <ul>
+            <li>
+                <p>Searching for an employee:</p>
+                <code>http://localhost:8080/employees/search?name=Amy</code><br>
+                <code>http://localhost:8080/employees/search?name=amy</code><br>
+                <code>http://localhost:8080/employees/search?grade=1</code><br>
+                <code>http://localhost:8080/employees/search?grade=1&salary=0</code><br>
+                <code>http://localhost:8080/employees/search?name=John&surname=Smith</code><br>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Error messages</h3>
+        <ul>
+            <li>In the case of lack of data for a correctly determined data or incorrectly formulated enquiries, the
+                service returns 404 Not Found message
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
